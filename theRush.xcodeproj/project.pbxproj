@@ -22,6 +22,10 @@
 		CC1049852316E17E008A4822 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1049842316E17E008A4822 /* User.swift */; };
 		CC1049872316E235008A4822 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1049862316E235008A4822 /* AppCoordinator.swift */; };
 		CC1049892316E72E008A4822 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1049882316E72E008A4822 /* UIWindow+Extensions.swift */; };
+		CC10498B2316EE36008A4822 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC10498A2316EE36008A4822 /* LoginViewController.swift */; };
+		CC10498D2316EF57008A4822 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC10498C2316EF57008A4822 /* LoginViewModel.swift */; };
+		CC1049902316EF97008A4822 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC10498F2316EF97008A4822 /* ViewModelProtocol.swift */; };
+		CC1049922316F4B2008A4822 /* RxSwift+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1049912316F4B2008A4822 /* RxSwift+Extensions.swift */; };
 		CCDFBF082316D44800D6C94C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDFBF072316D44800D6C94C /* AppDelegate.swift */; };
 		CCDFBF102316D44800D6C94C /* theRush.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCDFBF0E2316D44800D6C94C /* theRush.xcdatamodeld */; };
 		CCDFBF122316D44A00D6C94C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDFBF112316D44A00D6C94C /* Assets.xcassets */; };
@@ -65,6 +69,10 @@
 		CC1049842316E17E008A4822 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CC1049862316E235008A4822 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		CC1049882316E72E008A4822 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
+		CC10498A2316EE36008A4822 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CC10498C2316EF57008A4822 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CC10498F2316EF97008A4822 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		CC1049912316F4B2008A4822 /* RxSwift+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Extensions.swift"; sourceTree = "<group>"; };
 		CCDFBF042316D44800D6C94C /* theRush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theRush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDFBF072316D44800D6C94C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCDFBF0F2316D44800D6C94C /* theRush.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = theRush.xcdatamodel; sourceTree = "<group>"; };
@@ -178,6 +186,7 @@
 			children = (
 				CC1049762316DEE8008A4822 /* Extensions */,
 				CC1049752316DEDF008A4822 /* Logic */,
+				CC10498E2316EF6A008A4822 /* Protocols */,
 				CC1049772316DEF2008A4822 /* UI */,
 			);
 			path = Common;
@@ -194,6 +203,7 @@
 		CC1049762316DEE8008A4822 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CC1049912316F4B2008A4822 /* RxSwift+Extensions.swift */,
 				CC1049882316E72E008A4822 /* UIWindow+Extensions.swift */,
 			);
 			path = Extensions;
@@ -227,6 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				CC10497F2316E041008A4822 /* LoginCoordinator.swift */,
+				CC10498A2316EE36008A4822 /* LoginViewController.swift */,
+				CC10498C2316EF57008A4822 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -237,6 +249,14 @@
 				CC1049842316E17E008A4822 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CC10498E2316EF6A008A4822 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CC10498F2316EF97008A4822 /* ViewModelProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		CCDFBEFB2316D44800D6C94C = {
@@ -460,12 +480,16 @@
 			files = (
 				CC1049892316E72E008A4822 /* UIWindow+Extensions.swift in Sources */,
 				CC1049802316E041008A4822 /* LoginCoordinator.swift in Sources */,
+				CC10498D2316EF57008A4822 /* LoginViewModel.swift in Sources */,
 				CCDFBF082316D44800D6C94C /* AppDelegate.swift in Sources */,
+				CC1049922316F4B2008A4822 /* RxSwift+Extensions.swift in Sources */,
 				CC1049822316E0FF008A4822 /* UserService.swift in Sources */,
 				CCDFBF102316D44800D6C94C /* theRush.xcdatamodeld in Sources */,
 				CC1049872316E235008A4822 /* AppCoordinator.swift in Sources */,
 				CC10497D2316DFC6008A4822 /* MainCoordinator.swift in Sources */,
+				CC1049902316EF97008A4822 /* ViewModelProtocol.swift in Sources */,
 				CC10497A2316DF67008A4822 /* BaseCoordinator.swift in Sources */,
+				CC10498B2316EE36008A4822 /* LoginViewController.swift in Sources */,
 				CC1049852316E17E008A4822 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

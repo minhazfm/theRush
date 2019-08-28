@@ -24,7 +24,7 @@ final class UserService: UserServiceProtocol {
     // MARK: - Logic variables
     fileprivate(set) var userInstance = BehaviorRelay<User?>(value: nil)
     
-    var userAuthenticationState: UserAuthenticationState = .signedOut
+    var authenticationState: UserAuthenticationState = .signedOut
     
     // MARK: - Init
     init() {

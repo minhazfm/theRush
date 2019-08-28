@@ -1,0 +1,8 @@
+# Require version 2.x (latest 2.x release)
+# binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json"
+
+github "airbnb/lottie-ios" "master"
+github "ninjaprox/NVActivityIndicatorView" ~> 4.7.0
+github "ReactiveX/RxSwift" ~> 5.0.1
+github "RxSwiftCommunity/RxDataSources" ~> 4.0.1
+github "Skyscanner/SkyFloatingLabelTextField" ~> 3.7.0

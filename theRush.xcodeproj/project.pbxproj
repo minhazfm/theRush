@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC1049642316DACC008A4822 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC10495A2316DACB008A4822 /* RxSwift.framework */; };
+		CC1049662316DACC008A4822 /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC10495C2316DACB008A4822 /* NVActivityIndicatorView.framework */; };
+		CC1049672316DACC008A4822 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC10495D2316DACB008A4822 /* RxRelay.framework */; };
+		CC1049682316DACC008A4822 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC10495E2316DACB008A4822 /* RxDataSources.framework */; };
+		CC1049692316DACC008A4822 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC10495F2316DACB008A4822 /* Lottie.framework */; };
+		CC10496A2316DACC008A4822 /* SkyFloatingLabelTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1049602316DACB008A4822 /* SkyFloatingLabelTextField.framework */; };
+		CC10496B2316DACC008A4822 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1049612316DACB008A4822 /* RxCocoa.framework */; };
+		CC10496D2316DACC008A4822 /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1049632316DACC008A4822 /* Differentiator.framework */; };
 		CCDFBF082316D44800D6C94C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDFBF072316D44800D6C94C /* AppDelegate.swift */; };
 		CCDFBF0A2316D44800D6C94C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDFBF092316D44800D6C94C /* ViewController.swift */; };
 		CCDFBF0D2316D44800D6C94C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDFBF0B2316D44800D6C94C /* Main.storyboard */; };
@@ -35,6 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC10495A2316DACB008A4822 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		CC10495B2316DACB008A4822 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		CC10495C2316DACB008A4822 /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NVActivityIndicatorView.framework; path = Carthage/Build/iOS/NVActivityIndicatorView.framework; sourceTree = "<group>"; };
+		CC10495D2316DACB008A4822 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		CC10495E2316DACB008A4822 /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
+		CC10495F2316DACB008A4822 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
+		CC1049602316DACB008A4822 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyFloatingLabelTextField.framework; path = Carthage/Build/iOS/SkyFloatingLabelTextField.framework; sourceTree = "<group>"; };
+		CC1049612316DACB008A4822 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		CC1049622316DACB008A4822 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		CC1049632316DACC008A4822 /* Differentiator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Differentiator.framework; path = Carthage/Build/iOS/Differentiator.framework; sourceTree = "<group>"; };
 		CCDFBF042316D44800D6C94C /* theRush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theRush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDFBF072316D44800D6C94C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCDFBF092316D44800D6C94C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +74,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC1049642316DACC008A4822 /* RxSwift.framework in Frameworks */,
+				CC1049662316DACC008A4822 /* NVActivityIndicatorView.framework in Frameworks */,
+				CC1049672316DACC008A4822 /* RxRelay.framework in Frameworks */,
+				CC1049682316DACC008A4822 /* RxDataSources.framework in Frameworks */,
+				CC1049692316DACC008A4822 /* Lottie.framework in Frameworks */,
+				CC10496A2316DACC008A4822 /* SkyFloatingLabelTextField.framework in Frameworks */,
+				CC10496B2316DACC008A4822 /* RxCocoa.framework in Frameworks */,
+				CC10496D2316DACC008A4822 /* Differentiator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +102,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC1049592316DACB008A4822 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC1049632316DACC008A4822 /* Differentiator.framework */,
+				CC10495F2316DACB008A4822 /* Lottie.framework */,
+				CC10495C2316DACB008A4822 /* NVActivityIndicatorView.framework */,
+				CC10495B2316DACB008A4822 /* RxBlocking.framework */,
+				CC1049612316DACB008A4822 /* RxCocoa.framework */,
+				CC10495E2316DACB008A4822 /* RxDataSources.framework */,
+				CC10495D2316DACB008A4822 /* RxRelay.framework */,
+				CC10495A2316DACB008A4822 /* RxSwift.framework */,
+				CC1049622316DACB008A4822 /* RxTest.framework */,
+				CC1049602316DACB008A4822 /* SkyFloatingLabelTextField.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CCDFBEFB2316D44800D6C94C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +126,7 @@
 				CCDFBF1E2316D44A00D6C94C /* theRushTests */,
 				CCDFBF292316D44A00D6C94C /* theRushUITests */,
 				CCDFBF052316D44800D6C94C /* Products */,
+				CC1049592316DACB008A4822 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +182,7 @@
 				CCDFBF002316D44800D6C94C /* Sources */,
 				CCDFBF012316D44800D6C94C /* Frameworks */,
 				CCDFBF022316D44800D6C94C /* Resources */,
+				CC10496E2316DAEE008A4822 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -253,6 +298,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC10496E2316DAEE008A4822 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Differentiator.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/NVActivityIndicatorView.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxDataSources.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SkyFloatingLabelTextField.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Differentiator.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/NVActivityIndicatorView.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxDataSources.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxRelay.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SkyFloatingLabelTextField.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CCDFBF002316D44800D6C94C /* Sources */ = {
@@ -437,6 +518,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = theRush/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +539,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = theRush/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

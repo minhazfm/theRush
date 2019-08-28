@@ -1,5 +1,5 @@
 //
-//  LoginViewModel.swift
+//  MainViewModel.swift
 //  theRush
 //
 //  Created by Minhaz Mohammad on 8/28/19.
@@ -9,22 +9,22 @@
 import Foundation
 import RxSwift
 
-final class LoginViewModel: ViewModelProtocol {
+final class MainViewModel: ViewModelProtocol {
     
     typealias Dependency = HasUserService
     
     struct Bindings {
-        let logInButtonTap: Observable<Void>
+        let logOutButtonTap: Observable<Void>
     }
     
-    let logInSelection: Observable<Void>
+    let logOutSelection: Observable<Void>
     
     init(dependency: Dependency, bindings: Bindings) {
-        logInSelection = bindings.logInButtonTap
+        logOutSelection = bindings.logOutButtonTap
     }
     
     deinit {
-        print("LoginViewModel deinit")
+        print("MainViewModel deinit")
     }
     
 }

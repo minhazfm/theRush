@@ -14,7 +14,7 @@ final class LoginViewController: UIViewController, ViewModelAttachingProtocol {
 
     // MARK: - Conformance to ViewModelAttachingProtocol
     var bindings: LoginViewModel.Bindings {
-        return LoginViewModel.Bindings(loginButtonTap: loginButton.rx.tap.asObservable())
+        return LoginViewModel.Bindings(logInButtonTap: logInButton.rx.tap.asObservable())
     }
     
     var viewModel: Attachable<LoginViewModel>!
@@ -27,7 +27,7 @@ final class LoginViewController: UIViewController, ViewModelAttachingProtocol {
     // MARK: - UI variables
     fileprivate var areConstraintsSet: Bool = false
     
-    fileprivate lazy var loginButton: UIButton = {
+    fileprivate lazy var logInButton: UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle("Login", for: .normal)
         button.titleLabel?.font = UIFont(name: "Helvetica-Light", size: 18.0)
@@ -67,15 +67,15 @@ extension LoginViewController {
     
     fileprivate func configureAppearance() {
         view.backgroundColor = .orange
-        view.addSubview(loginButton)
+        view.addSubview(logInButton)
     }
     
     fileprivate func configureConstraints() {
         NSLayoutConstraint.activate([
-            loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            loginButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            loginButton.widthAnchor.constraint(equalToConstant: 60),
-            loginButton.heightAnchor.constraint(equalToConstant: 30)
+            logInButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            logInButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            logInButton.widthAnchor.constraint(equalToConstant: 60),
+            logInButton.heightAnchor.constraint(equalToConstant: 30)
         ])
     }
     

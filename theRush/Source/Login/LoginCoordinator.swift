@@ -18,10 +18,10 @@ final class LoginCoordinator: BaseCoordinator<LoginCoordinationResult> {
     
     typealias Dependencies = HasUserService
     
-    fileprivate let window: UIWindow
     fileprivate let dependencies: Dependencies
+    fileprivate let window: UIWindow
     
-    init(window: UIWindow, dependencies: Dependencies) {
+    init(dependencies: Dependencies, window: UIWindow) {
         self.window = window
         self.dependencies = dependencies
     }
@@ -31,13 +31,13 @@ final class LoginCoordinator: BaseCoordinator<LoginCoordinationResult> {
         let attachableViewModel: Attachable<LoginViewModel> = .detached(dependencies)
         let viewModel = viewController.attach(wrapper: attachableViewModel)
         
-        let loginResult = viewModel.loginSelection
-            .do(onNext: { _ in print("Tap") })
+        let logInResult = viewModel.logInSelection
+            .do(onNext: { _ in print("Log In Tap") })
             .map({ _ in LoginCoordinationResult.failure })
         
         window.setRootViewController(viewController)
         
-        return loginResult
+        return logInResult
             .filter({ $0 != .failure })
             .take(1)
     }

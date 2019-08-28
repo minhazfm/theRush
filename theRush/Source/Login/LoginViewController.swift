@@ -30,7 +30,7 @@ final class LoginViewController: UIViewController, ViewModelAttachingProtocol {
     fileprivate lazy var loginButton: UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle("Login", for: .normal)
-        button.titleLabel?.font = UIFont(name: "Helvetica-Light", size: 14.0)
+        button.titleLabel?.font = UIFont(name: "Helvetica-Light", size: 18.0)
         button.titleLabel?.textColor = .red
         button.translatesAutoresizingMaskIntoConstraints = false
         return button

@@ -21,6 +21,7 @@ final class LoginViewModel: ViewModelProtocol {
     
     init(dependency: Dependency, bindings: Bindings) {
         logInSelection = bindings.logInButtonTap
+            .do(onNext: { _ in dependency.userService.toggleAuthentication() })
     }
     
     deinit {

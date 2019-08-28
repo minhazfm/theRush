@@ -21,6 +21,7 @@ final class MainViewModel: ViewModelProtocol {
     
     init(dependency: Dependency, bindings: Bindings) {
         logOutSelection = bindings.logOutButtonTap
+            .do(onNext: { _ in dependency.userService.toggleAuthentication() })
     }
     
     deinit {

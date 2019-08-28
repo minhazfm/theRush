@@ -31,8 +31,28 @@ final class UserService: UserServiceProtocol {
         print("UserService init")
     }
     
+    func toggleAuthentication() {
+        authenticationState = authenticationState == .signedIn ? .signedOut : .signedIn
+    }
+    
     deinit {
         print("UserService deinit")
     }
+    
+}
+
+extension Reactive where Base: UserService {
+    
+//    func toggleAuthentication() -> Observable<Void> {
+//        return Observable.create({ (observer) -> Disposable in
+//            let currentState = self.base.authenticationState
+//            self.base.authenticationState = currentState == .signedIn ? .signedOut : .signedIn
+//
+//            observer.onNext(())
+//            observer.onCompleted()
+//
+//            return Disposables.create()
+//        })
+//    }
     
 }

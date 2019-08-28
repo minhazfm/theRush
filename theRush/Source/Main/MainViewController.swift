@@ -69,7 +69,7 @@ final class MainViewController: UIViewController, ViewModelAttachingProtocol {
                                          style: .plain,
                                          target: self,
                                          action: nil)
-        buttonItem.tintColor = .white
+        buttonItem.tintColor = .blue
         return buttonItem
     }()
     
@@ -111,13 +111,17 @@ final class MainViewController: UIViewController, ViewModelAttachingProtocol {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        view.backgroundColor = .yellow
-        navigationItem.rightBarButtonItem = logOutButtonItem
+        configureAppearance()
     }
 
 }
 
 extension MainViewController: UIGestureRecognizerDelegate {
+    
+    fileprivate func configureAppearance() {
+        view.backgroundColor = .yellow
+        navigationController?.navigationItem.rightBarButtonItem = logOutButtonItem
+    }
     
     @objc fileprivate func handleTap(_ recognizer: UITapGestureRecognizer) {
         

@@ -33,7 +33,7 @@ final class LoginCoordinator: BaseCoordinator<LoginCoordinationResult> {
         
         let logInResult = viewModel.logInSelection
             .do(onNext: { _ in print("Log In Tap") })
-            .map({ _ in LoginCoordinationResult.failure })
+            .map({ _ in LoginCoordinationResult.success })
         
         window.setRootViewController(viewController)
         

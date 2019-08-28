@@ -49,7 +49,6 @@ extension AppCoordinator {
                 return presentMainView()
                     .asDriverOnErrorJustComplete()
                     .drive(onNext: { [weak self] authState in
-                        self?.window.rootViewController = nil
                         self?.coordinateToRoot(with: authState)
                     })
                     .disposed(by: disposeBag)
@@ -58,7 +57,6 @@ extension AppCoordinator {
                 return presentLoginView()
                     .asDriverOnErrorJustComplete()
                     .drive(onNext: { [weak self] authState in
-                        self?.window.rootViewController = nil
                         self?.coordinateToRoot(with: authState)
                     })
                     .disposed(by: disposeBag)

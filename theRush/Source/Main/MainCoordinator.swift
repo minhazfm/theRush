@@ -29,6 +29,8 @@ final class MainCoordinator: BaseCoordinator<MainCoordinationResult> {
     
     override func start() -> Observable<MainCoordinationResult> {
         let viewController = MainViewController()
+        let navigationController = UINavigationController(rootViewController: viewController)
+        
         let attachableViewModel: Attachable<MainViewModel> = .detached(dependencies)
         let viewModel = viewController.attach(wrapper: attachableViewModel)
         
@@ -36,7 +38,7 @@ final class MainCoordinator: BaseCoordinator<MainCoordinationResult> {
             .do(onNext: { _ in print("Log Out Tap") })
             .map({ _ in MainCoordinationResult.signOut })
         
-        window.setRootViewController(viewController)
+        window.setRootViewController(navigationController)
         
         return logOutResult
             .filter({ $0 == .signOut })

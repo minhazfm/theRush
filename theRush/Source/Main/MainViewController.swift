@@ -113,6 +113,11 @@ final class MainViewController: UIViewController, ViewModelAttachingProtocol {
         // Do any additional setup after loading the view.
         configureAppearance()
     }
+    
+    deinit {
+        print("MainViewController deinit")
+        viewModel = nil
+    }
 
 }
 
@@ -120,7 +125,7 @@ extension MainViewController: UIGestureRecognizerDelegate {
     
     fileprivate func configureAppearance() {
         view.backgroundColor = .yellow
-        navigationController?.navigationItem.rightBarButtonItem = logOutButtonItem
+        navigationItem.rightBarButtonItem = logOutButtonItem
     }
     
     @objc fileprivate func handleTap(_ recognizer: UITapGestureRecognizer) {

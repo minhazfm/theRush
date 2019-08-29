@@ -28,6 +28,11 @@
 		CC1049922316F4B2008A4822 /* RxSwift+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1049912316F4B2008A4822 /* RxSwift+Extensions.swift */; };
 		CC1049942316FDC2008A4822 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1049932316FDC2008A4822 /* MainViewController.swift */; };
 		CC104998231704C9008A4822 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC104997231704C9008A4822 /* MainViewModel.swift */; };
+		CC50A38E231827CE00DA3CF4 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50A38D231827CE00DA3CF4 /* CoreDataService.swift */; };
+		CC50A390231829AA00DA3CF4 /* CoreDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50A38F231829AA00DA3CF4 /* CoreDataProtocol.swift */; };
+		CC50A39323182B1900DA3CF4 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50A39223182B1900DA3CF4 /* BaseRepository.swift */; };
+		CC50A39523182BB100DA3CF4 /* NSManagedObjectContext+RxExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50A39423182BB100DA3CF4 /* NSManagedObjectContext+RxExtensions.swift */; };
+		CC50A39723182C0D00DA3CF4 /* FetchedResultsControllerEntityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50A39623182C0D00DA3CF4 /* FetchedResultsControllerEntityObserver.swift */; };
 		CCDFBF082316D44800D6C94C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDFBF072316D44800D6C94C /* AppDelegate.swift */; };
 		CCDFBF102316D44800D6C94C /* theRush.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCDFBF0E2316D44800D6C94C /* theRush.xcdatamodeld */; };
 		CCDFBF122316D44A00D6C94C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDFBF112316D44A00D6C94C /* Assets.xcassets */; };
@@ -77,6 +82,11 @@
 		CC1049912316F4B2008A4822 /* RxSwift+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Extensions.swift"; sourceTree = "<group>"; };
 		CC1049932316FDC2008A4822 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CC104997231704C9008A4822 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CC50A38D231827CE00DA3CF4 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataService.swift; path = theRush/Source/Services/Persistence/CoreDataService.swift; sourceTree = SOURCE_ROOT; };
+		CC50A38F231829AA00DA3CF4 /* CoreDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProtocol.swift; sourceTree = "<group>"; };
+		CC50A39223182B1900DA3CF4 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		CC50A39423182BB100DA3CF4 /* NSManagedObjectContext+RxExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+RxExtensions.swift"; sourceTree = "<group>"; };
+		CC50A39623182C0D00DA3CF4 /* FetchedResultsControllerEntityObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedResultsControllerEntityObserver.swift; sourceTree = "<group>"; };
 		CCDFBF042316D44800D6C94C /* theRush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theRush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDFBF072316D44800D6C94C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCDFBF0F2316D44800D6C94C /* theRush.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = theRush.xcdatamodel; sourceTree = "<group>"; };
@@ -223,7 +233,9 @@
 		CC1049782316DF10008A4822 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				CC50A39123182AE400DA3CF4 /* Common */,
 				CC1049832316E170008A4822 /* Models */,
+				CC50A38D231827CE00DA3CF4 /* CoreDataService.swift */,
 				CCDFBF0E2316D44800D6C94C /* theRush.xcdatamodeld */,
 			);
 			path = Persistence;
@@ -262,6 +274,7 @@
 		CC10498E2316EF6A008A4822 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				CC50A38F231829AA00DA3CF4 /* CoreDataProtocol.swift */,
 				CC10498F2316EF97008A4822 /* ViewModelProtocol.swift */,
 			);
 			path = Protocols;
@@ -279,6 +292,16 @@
 			children = (
 			);
 			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		CC50A39123182AE400DA3CF4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CC50A39223182B1900DA3CF4 /* BaseRepository.swift */,
+				CC50A39623182C0D00DA3CF4 /* FetchedResultsControllerEntityObserver.swift */,
+				CC50A39423182BB100DA3CF4 /* NSManagedObjectContext+RxExtensions.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		CCDFBEFB2316D44800D6C94C = {
@@ -502,17 +525,22 @@
 			files = (
 				CC1049892316E72E008A4822 /* UIWindow+Extensions.swift in Sources */,
 				CC1049802316E041008A4822 /* LoginCoordinator.swift in Sources */,
+				CC50A390231829AA00DA3CF4 /* CoreDataProtocol.swift in Sources */,
 				CC10498D2316EF57008A4822 /* LoginViewModel.swift in Sources */,
 				CCDFBF082316D44800D6C94C /* AppDelegate.swift in Sources */,
+				CC50A38E231827CE00DA3CF4 /* CoreDataService.swift in Sources */,
 				CC1049922316F4B2008A4822 /* RxSwift+Extensions.swift in Sources */,
 				CC104998231704C9008A4822 /* MainViewModel.swift in Sources */,
 				CC1049822316E0FF008A4822 /* UserService.swift in Sources */,
+				CC50A39523182BB100DA3CF4 /* NSManagedObjectContext+RxExtensions.swift in Sources */,
 				CCDFBF102316D44800D6C94C /* theRush.xcdatamodeld in Sources */,
 				CC1049942316FDC2008A4822 /* MainViewController.swift in Sources */,
 				CC1049872316E235008A4822 /* AppCoordinator.swift in Sources */,
+				CC50A39323182B1900DA3CF4 /* BaseRepository.swift in Sources */,
 				CC10497D2316DFC6008A4822 /* MainCoordinator.swift in Sources */,
 				CC1049902316EF97008A4822 /* ViewModelProtocol.swift in Sources */,
 				CC10497A2316DF67008A4822 /* BaseCoordinator.swift in Sources */,
+				CC50A39723182C0D00DA3CF4 /* FetchedResultsControllerEntityObserver.swift in Sources */,
 				CC10498B2316EE36008A4822 /* LoginViewController.swift in Sources */,
 				CC1049852316E17E008A4822 /* User.swift in Sources */,
 			);

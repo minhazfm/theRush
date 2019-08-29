@@ -14,9 +14,37 @@ import RxRelay
 extension ObservableType {
     
     func asDriverOnErrorJustComplete() -> Driver<Element> {
-        return asDriver { _ in
+        return asDriver(onErrorRecover: { _ in
             return Driver.empty()
-        }
+        })
     }
     
+    func mapToVoid() -> Observable<Void> {
+        return map({ _ in })
+    }
+    
+    func unwrap<T>() -> Observable<T> where Element == T? {
+        return filter({ $0 != nil }).map({ $0! })
+    }
+    
+}
+
+extension Observable where Element: Sequence, Element.Iterator.Element: ModelConvertibleType {
+    typealias ModelType = Element.Iterator.Element.ModelType
+    
+    func mapToModel() -> Observable<[ModelType]> {
+        return map({ sequence -> [ModelType] in
+            return sequence.mapToModel()
+        })
+    }
+}
+
+extension Sequence where Iterator.Element: ModelConvertibleType {
+    typealias Element = Iterator.Element
+    
+    func mapToModel() -> [Element.ModelType] {
+        return map({
+            return $0.asModel()
+        })
+    }
 }
